@@ -1,11 +1,9 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fondo de la página */
 body {
   background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
   font-family: "Arial", sans-serif;
@@ -17,7 +15,6 @@ body {
   flex-direction: column;
 }
 
-/* Contenedor principal */
 .container {
   max-width: 500px;
   background: #ffffff;
@@ -31,7 +28,6 @@ body {
   justify-content: center;
 }
 
-/* Título principal */
 h1 {
   font-size: 32px;
   font-weight: 700;
@@ -40,7 +36,6 @@ h1 {
   letter-spacing: 1px;
 }
 
-/* Selectores */
 select {
   display: block;
   width: 60%;
@@ -59,7 +54,6 @@ select:hover {
   border-color: #bbb;
 }
 
-/* Estilo de las ciudades */
 .city {
   display: flex;
   justify-content: space-between;
@@ -75,7 +69,6 @@ select:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo de los textos de las ciudades */
 h2 {
   font-size: 24px;
   color: #444;
@@ -100,7 +93,6 @@ h2 {
   opacity: 0.8;
 }
 
-/* Enlace de "All cities" */
 #all-cities {
   display: block;
   margin-top: 20px;
@@ -115,7 +107,6 @@ h2 {
   color: #0056b3;
 }
 
-/* Pie de página */
 footer {
   text-align: center;
   font-size: 14px;
@@ -135,7 +126,6 @@ footer a:hover {
   color: #0056b3;
 }
 
-/* Estructura de la página */
 html,
 body {
   height: 100%;

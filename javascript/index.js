@@ -1,22 +1,34 @@
 function update_Time() {
+  // Los Angeles
   let LAElement = document.querySelector("#LA");
   if (LAElement) {
     let LADateElement = LAElement.querySelector(".date");
     let LATimeElement = LAElement.querySelector(".time");
     let LATime = moment().tz("America/Los_Angeles");
-
     LADateElement.innerHTML = LATime.format("MMMM Do YYYY");
     LATimeElement.innerHTML = LATime.format("h:mm:ss [<small>]A[</small>]");
   }
 
+  // Sydney
   let SYDElement = document.querySelector("#SYD");
   if (SYDElement) {
     let SYDDateElement = SYDElement.querySelector(".date");
     let SYDTimeElement = SYDElement.querySelector(".time");
     let SYDTime = moment().tz("Australia/Sydney");
-
     SYDDateElement.innerHTML = SYDTime.format("MMMM Do YYYY");
     SYDTimeElement.innerHTML = SYDTime.format("h:mm:ss [<small>]A[</small>]");
+  }
+
+  // Seoul
+  let SEOUL_Element = document.querySelector("#SEOUL");
+  if (SEOUL_Element) {
+    let SEOUL_DateElement = SEOUL_Element.querySelector(".date");
+    let SEOUL_TimeElement = SEOUL_Element.querySelector(".time");
+    let SEOUL_Time = moment().tz("Asia/Seoul");
+    SEOUL_DateElement.innerHTML = SEOUL_Time.format("MMMM Do YYYY");
+    SEOUL_TimeElement.innerHTML = SEOUL_Time.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
 }
 
@@ -61,6 +73,13 @@ function resetCities() {
     <div class="city" id="SYD">
       <div>
         <h2>Sydney</h2>
+        <div class="date"></div>
+      </div>
+      <div class="time"></div>
+    </div>
+    <div class="city" id="SEOUL">
+      <div>
+        <h2>Seoul</h2>
         <div class="date"></div>
       </div>
       <div class="time"></div>
